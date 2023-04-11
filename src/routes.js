@@ -24,7 +24,6 @@ export const routes = [
     path: buildRoutePath('/tasks'),
     handler: (req, res) => {
       const { title, description } = req.body;
-
       const tasks = {
         id: randomUUID(),
         title,
